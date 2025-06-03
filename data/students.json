@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Archna",
+    "age": 20,
+    "course": "B.Sc CS",
+    "email": "archna@example.com"
+  },
+  {
+    "name": "Paulmi",
+    "age": 21,
+    "course": "B.Tech IT",
+    "email": "paulmi@example.com"
+  },
+  {
+    "name": "Sheetal",
+    "age": 23,
+    "course": "MBA",
+    "email": "sheetal@example.com"
+  },
+  {
+    "name": "Hamid",
+    "age": 24,
+    "course": "M.Tech",
+    "email": "hamid@example.com"
+  },
+  {
+    "name": "Aman",
+    "age": 22,
+    "course": "BCA",
+    "email": "aman@example.com"
+  },
+  {
+    "name": "Nadeem",
+    "age": 25,
+    "course": "PhD CS",
+    "email": "nadeem@example.com"
+  },
+  {
+    "name": "Divya",
+    "age": 24,
+    "course": "M.Tech",
+    "email": "Divya@example.com"
+  },
+  {
+    "name": "Sandeep",
+    "age": 21,
+    "course": "M.Tech",
+    "email": "Sandeep@example.com"
+  }
+]
