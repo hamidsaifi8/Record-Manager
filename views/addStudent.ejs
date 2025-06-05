@@ -5,25 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: roboto;
+            background-image: linear-gradient(to bottom, #f6a49d, #f6c5c1, #e98175);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 600px;
+            background-image: linear-gradient(90deg, rgb(241, 240, 240), rgb(249, 227, 227));
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input {
+            width: 89%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #066bd6;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>Add Student</h2>
-    <form action="/add" method="POST">
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="number" name="age" placeholder="Age" required />
-        <input type="text" name="course" placeholder="Course" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <button type="submit">Add Student</button>
-    </form>
+    <div class="form-container">
+        <h1>Add Student</h1>
+        <form action="/add" method="POST">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="number" name="age" placeholder="Age" required />
+            <input type="text" name="course" placeholder="Course" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <button type="submit">Add Student</button>
+        </form>
 
-    <% if(message){%>
-        <p>
-            <%= message %>
-        </p>
-        <%}%>
+        <% if(message){%>
+            <p>
+                <%= message %>
+            </p>
+            <%}%>
 
-            <a href="/search">Go to search your data </a>
+                <a href="/search">Go to search data </a>
+    </div>
 </body>
 
 </html>

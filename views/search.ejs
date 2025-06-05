@@ -7,24 +7,26 @@
     <title>Document</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f0f2f5;
+            font-family: roboto;
+            background-image: linear-gradient(to bottom, #f6a49d, #f6c5c1, #e98175);
             margin: 0;
             padding: 0;
+            height: 100vh;
         }
 
         .container {
-            max-width: 400px;
+            max-width: 450px;
             margin: 50px auto;
-            background: white;
+            background-image: linear-gradient(90deg, rgb(240, 229, 229), rgb(253, 208, 208));
             padding: 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
         }
 
-        h1 {
+        h2 {
             text-align: center;
             color: #333;
+
         }
 
         form {
@@ -35,7 +37,7 @@
 
         input[type="text"] {
             flex: 1;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
@@ -53,14 +55,15 @@
             background-color: #0056b3;
         }
 
-        .output {
-            background: #e9f7ef;
-            padding: 20px;
+        .result {
+            background: #baccc2;
+            padding: 10px 30px;
             border-left: 5px solid #28a745;
-            border-radius: 5px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
 
-        .output p {
+        .result p {
             margin: 10px 0;
         }
 
@@ -70,6 +73,13 @@
 
         p {
             color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #066bd6;
+            font-weight: bold;
+            margin-left: 20px;
         }
     </style>
 
@@ -86,7 +96,7 @@
 
         <% if (student) { %>
             <div class="result">
-                <h3>Student Found:</h3>
+                <h3>Student data Found:</h3>
                 <p><strong>Name:</strong>
                     <%= student.name %>
                 </p>
@@ -104,7 +114,7 @@
                 <p class="error">No match for "<%= searchedName %>"</p>
                 <% } %>
 
-                    <a href="/add">Go to Add Page</a>
+                    <a href="/">Go to add Student Page</a>
     </div>
 </body>
 
