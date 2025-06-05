@@ -46,5 +46,11 @@
     "age": 21,
     "course": "M.Tech",
     "email": "Sandeep@example.com"
+  },
+  {
+    "name": "hamid",
+    "age": "21",
+    "course": "MERN",
+    "email": "hamidsaifi8@gmail.com"
   }
 ]

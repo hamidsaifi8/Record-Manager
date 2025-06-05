@@ -77,36 +77,34 @@
 
 <body>
     <div class="container">
-        <h1>Search Student Data</h1>
-        <form method="GET" action="/">
-            <input type="text" name="name" value="<%= searchedName || '' %>" required>
-
+        <h2>Search Student Data</h2>
+        <form method="GET" action="/search">
+            <input type="text" name="name" placeholder="Enter student name" value="<%= searchedName || '' %>"
+                required />
             <button type="submit">Search</button>
         </form>
 
-        <% if(student){ %>
-            <div class="output">
-                <h2>Reuired Student's details as:- </h2>
-
-                <p> <strong>Name : </strong>
+        <% if (student) { %>
+            <div class="result">
+                <h3>Student Found:</h3>
+                <p><strong>Name:</strong>
                     <%= student.name %>
                 </p>
-                <p> <strong>Age : </strong>
+                <p><strong>Age:</strong>
                     <%= student.age %>
                 </p>
-                <p> <strong>Course : </strong>
+                <p><strong>Course:</strong>
                     <%= student.course %>
                 </p>
-                <p> <strong>Email : </strong>
+                <p><strong>Email:</strong>
                     <%= student.email %>
                 </p>
-
             </div>
-            <%} else if (searchedName) {%>
-                <p>Data not Found</p>
+            <% } else if (searchedName) { %>
+                <p class="error">No match for "<%= searchedName %>"</p>
                 <% } %>
 
-
+                    <a href="/add">Go to Add Page</a>
     </div>
 </body>
 
