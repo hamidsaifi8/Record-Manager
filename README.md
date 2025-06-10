@@ -1,2 +1,2 @@
 #Student Record Manager
-- Using MERN
+- Frontend files added.
